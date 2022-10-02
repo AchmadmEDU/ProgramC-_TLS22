@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char op;
+    float num1, num2, result;
+    
+    cout << "       Simple Calculator      \n";
+    cout << "<============================>\n";
+    cout << "Enter operator(+, -, *, /): ";
+    cin >> op;
+    cout << "Enter first operand: ";
+    cin >> num1;
+    cout << "Enter second operand: ";
+    cin>> num2;
+
+    switch(op) 
+{
+    case '+':
+      result = num1 + num2;
+      cout << num1 << " + " << num2 << endl;
+      cout << "Result: " << result;
+      break;
+    case '-':
+      result = num1 - num2;
+      cout << num1 << " - " << num2 << endl;
+      cout << "Result: " << result;
+      break;
+    case '*':
+      result = num1 * num2;
+      cout << num1 << " * " << num2 << endl;
+      cout << "Result: " << result;
+      break;
+    case '/':
+      result = num1 / num2;
+      cout << num1 << " / " << num2 << endl;
+      cout << "Result: " << result;
+      break;
+    default:
+      cout << "Operator is not correct";
+      break;
+}
+    return 0;
+}
